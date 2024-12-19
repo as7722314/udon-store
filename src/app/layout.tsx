@@ -1,5 +1,5 @@
-import DefaultLayout from "@/components/layouts/default";
-import "./globals.css";
+import Header from "@/components/header/Header";
+import "./styles/globals.css";
 
 export default function RootLayout({
   children,
@@ -7,6 +7,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <DefaultLayout content={children}></DefaultLayout>
+    <>
+      <html lang="tw">
+        <body>
+          <Header />
+          <main>{children}</main>
+        </body>
+      </html>
+    </>
   );
 }

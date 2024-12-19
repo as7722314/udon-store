@@ -1,9 +1,9 @@
 import Store from "@/components/store";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <main>
+    <section>
       <Store></Store>
-    </main>
+    </section>
   );
 }

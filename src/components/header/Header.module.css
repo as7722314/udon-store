@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  height: fit-content;
+  background: #e14d4d;
+  position: fixed;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 30px;
+}
+
+.linkDecoratin {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+  padding: 10px;
+}
+
+.linkDecoratin:hover {
+  background-color: #D92323;
+  color: blanchedalmond;
+}
+
+.storeName {
+  width: 40%;
+  text-align: start;
+  display: flex;
+  align-self: center;
+  font-size: 48px;
+}
+
+.menu {
+  width: 60%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 80px;
+  list-style: none;
+}
