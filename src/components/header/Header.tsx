@@ -55,7 +55,7 @@ const Header: React.FC = () => {
         ))}
       </NavbarContent>
 
-      <NavbarMenu className="bg-primary/90 backdrop-blur-md">
+      <NavbarMenu className="bg-primary/90 backdrop-blur-md flex flex-col gap-4 items-center pt-10">
         {menuItems.map((item) => (
           <NavbarMenuItem key={item.href}>
             <NavLink href={item.href} icon={item.icon}>
