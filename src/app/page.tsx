@@ -1,9 +1,9 @@
-import Store from "@/components/store";
+import Home from "@/components/home";
 
 export default function HomePage() {
   return (
     <section>
-      <Store></Store>
+      <Home></Home>
     </section>
   );
 }
