@@ -5,9 +5,9 @@ const Card = () => {
   return (
     <>
       <a className={styles.card}>
-        <Image alt="news" src="" width={1000} height={500} className={styles.cardImg}/>
+        <Image alt="news" src="" className="w-1000 h-500" />
         <div>
-            <p></p>
+          <p></p>
         </div>
       </a>
     </>

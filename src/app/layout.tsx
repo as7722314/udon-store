@@ -1,19 +1,20 @@
+import { Providers } from "./providers";
 import Header from "@/components/header/Header";
 import "./styles/globals.css";
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <>
-      <html lang="tw">
-        <body>
+    <html lang="en">
+      <body>
+        <Providers>
           <Header />
-          <main>{children}</main>
-        </body>
-      </html>
-    </>
+          {children}
+        </Providers>
+      </body>
+    </html>
   );
 }
