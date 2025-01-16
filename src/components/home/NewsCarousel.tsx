@@ -48,7 +48,7 @@ export default function NewsCarousel() {
   }, [nextSlide]);
 
   return (
-    <div className="relative w-full max-w-6xl mx-auto h-[550px] overflow-hidden group carousel-container">
+    <div className="relative w-full max-w-6xl mx-auto h-[500px] overflow-hidden group carousel-container">
       <div
         className="flex transition-transform duration-500 ease-out h-full"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -86,7 +86,7 @@ export default function NewsCarousel() {
       </button>
 
       {/* 導航點 */}
-      <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 flex gap-3">
+      <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 flex gap-3">
         {recentNews.map((_, index) => (
           <button
             key={index}

@@ -43,7 +43,7 @@ export default function NewsSlide({
                 isActive ? "scale-100 opacity-100" : "scale-90 opacity-50"
               }`}
             >
-              <div className="bg-blanchedalmond/40 backdrop-blur-sm rounded-lg p-4 mx-4 shadow-lg">
+              <div className="bg-blanchedalmond/50 backdrop-blur-sm rounded-lg p-4 mx-4 shadow-lg">
                 <h3 className="text-4xl font-serif font-bold text-primary mb-4">
                   {title}
                 </h3>
