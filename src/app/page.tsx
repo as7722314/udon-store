@@ -1,9 +1,13 @@
-import Home from "@/components/home";
+import NewsCarousel from "@/components/home/NewsCarousel";
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <section>
-      <Home></Home>
-    </section>
+    <main className="container mx-auto px-4">
+      <div className="flex flex-col items-center justify-center my-6 p-6">
+        <div className="w-full">
+          <NewsCarousel />
+        </div>
+      </div>
+    </main>
   );
 }

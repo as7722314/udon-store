@@ -3,6 +3,7 @@
 import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import { Home, Newspaper, UtensilsCrossed, Info, MapPin } from "lucide-react";
+import { newsCategories, newsData } from "@/constants/store";
 
 interface PathConfig {
   label: string;
@@ -32,6 +33,22 @@ export default function BreadcrumbsNav() {
   const pathname = usePathname();
   const paths = pathname.split("/").filter(Boolean);
 
+  // 處理新聞詳情頁的麵包屑
+  const processedPaths = paths.map((path, index) => {
+    if (index === paths.length - 1 && paths[0] === "news" && !isNaN(Number(path))) {
+      const newsItem = newsData.find((n) => n.id === parseInt(path));
+      return {
+        href: `/news/${path}`,
+        label: newsCategories[newsItem?.category || "new"],
+      };
+    }
+    return {
+      href: `/${paths.slice(0, index + 1).join("/")}`,
+      label: pathMap[path]?.label || path,
+      icon: pathMap[path]?.icon,
+    };
+  });
+
   return (
     <Breadcrumbs
       className="py-2 px-4"
@@ -47,15 +64,15 @@ export default function BreadcrumbsNav() {
       <BreadcrumbItem href="/" startContent={<Home className="w-4 h-4" />}>
         首頁
       </BreadcrumbItem>
-      {paths.map((path) => {
-        const href = `/${path}`;
-        const config = pathMap[path];
-        return (
-          <BreadcrumbItem key={href} href={href} startContent={config?.icon}>
-            {config?.label || path}
-          </BreadcrumbItem>
-        );
-      })}
+      {processedPaths.map((path) => (
+        <BreadcrumbItem
+          key={path.href}
+          href={path.href}
+          startContent={path.icon}
+        >
+          {path.label}
+        </BreadcrumbItem>
+      ))}
     </Breadcrumbs>
   );
 }

@@ -7,7 +7,7 @@ export default function AboutPage() {
     <main className="container mx-auto px-4">
       <BreadcrumbsNav />
       <div className="max-w-4xl mx-auto">
-        <div className="bg-blanchedalmond backdrop-blur-md rounded-lg p-6 mb-12">
+        <div className="bg-blanchedalmond backdrop-blur-md rounded-lg p-6 my-6">
           <h2 className="text-2xl font-serif font-bold text-primary mb-4">
             {aboutInfo.title}
           </h2>
