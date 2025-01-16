@@ -24,8 +24,8 @@ export async function generateMetadata({
 
   if (!news) {
     return {
-      title: "新闻不存在",
-      description: "找不到该新闻内容",
+      title: "消息不存在",
+      description: "找不到该消息内容",
     };
   }
 
@@ -46,6 +46,7 @@ export async function generateMetadata({
     },
   };
 }
+
 export default async function NewsDetailPage({ params }: PageProps) {
   const { id } = await params;
   const news = newsData.find((n) => n.id === parseInt(id));
