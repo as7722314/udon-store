@@ -48,7 +48,7 @@ export default function NewsCarousel() {
   }, [nextSlide]);
 
   return (
-    <div className="relative w-full max-w-6xl mx-auto h-[500px] overflow-hidden group carousel-container">
+    <div className="relative w-full max-w-6xl mx-auto h-[550px] overflow-hidden group carousel-container">
       <div
         className="flex transition-transform duration-500 ease-out h-full"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}

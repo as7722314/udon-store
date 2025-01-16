@@ -23,9 +23,11 @@ export default function NewsSlide({
       onClick={onClick}
     >
       <div className="absolute inset-4">
-        <div className={`w-full h-full relative rounded-xl overflow-hidden transition-all duration-500 ${
-          isActive ? "scale-100" : "scale-90"
-        }`}>
+        <div
+          className={`w-full h-full relative rounded-xl overflow-hidden transition-all duration-500 ${
+            isActive ? "scale-100" : "scale-90"
+          }`}
+        >
           <Image
             src={imageUrl}
             alt={title}
@@ -41,7 +43,7 @@ export default function NewsSlide({
                 isActive ? "scale-100 opacity-100" : "scale-90 opacity-50"
               }`}
             >
-              <div className="bg-blanchedalmond/95 backdrop-blur-sm rounded-lg p-4 mx-4 shadow-lg">
+              <div className="bg-blanchedalmond/40 backdrop-blur-sm rounded-lg p-4 mx-4 shadow-lg">
                 <h3 className="text-4xl font-serif font-bold text-primary mb-4">
                   {title}
                 </h3>
@@ -53,4 +55,4 @@ export default function NewsSlide({
       </div>
     </div>
   );
-} 
+}
