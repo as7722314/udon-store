@@ -1,3 +1,16 @@
+export const siteConfig = {
+  name: "烏龍麵本店",
+  description: "提供美味的烏龍麵與各式餐點",
+  openHours: "11:00 - 21:00",
+  phone: "(02) 2345-6789",
+  mobile: "0912-345-678",
+  address: "台北市中山區中山北路二段99號",
+  email: "info@udon.com",
+  facebook: "https://facebook.com/udon",
+  instagram: "https://instagram.com/udon",
+  googleMapUrl: "https://maps.google.com/?q=台北市中山區中山北路二段99號",
+};
+
 export const storeInfo = {
   name: "烏龍麵本店",
   phone: "(02) 2345-6789",
@@ -9,7 +22,7 @@ export const storeInfo = {
 };
 
 export const aboutInfo = {
-  title: "關於烏龍麵",
+  title: "關於烏龍麵本店",
   description: `我們的烏龍麵店創立於2020年，秉持著傳統日本烏龍麵的製作工藝，
   結合台灣在地食材，為顧客提供最道地的美味。每一根麵條都由師傅手工製作，
   湯頭更是使用精選食材，熬煮超過8小時。`,
@@ -161,3 +174,140 @@ export const newsData = [
     imageUrl: "/fake/chinese-festival.jpg",
   },
 ];
+
+export const foodData = {
+  飯食: [
+    {
+      id: 1,
+      name: "咖哩飯",
+      price: 75,
+      description: `特製咖哩醬汁，搭配新鮮蔬菜和嫩煎雞肉，
+      香濃美味，令人回味無窮。
+
+      配料：
+      - 嫩煎雞肉
+      - 紅蘿蔔
+      - 馬鈴薯
+      - 洋蔥
+      - 青花菜`,
+      imageUrl: "/fake/fake-product.jpg",
+    },
+    {
+      id: 2,
+      name: "親子丼",
+      price: 80,
+      description: `使用溫泉蛋製作，口感滑嫩，
+      搭配特製醬汁，香氣四溢。
+
+      配料：
+      - 溫泉蛋
+      - 雞肉
+      - 洋蔥
+      - 蔥花`,
+      imageUrl: "/fake/fake-product.jpg",
+    },
+    {
+      id: 3,
+      name: "炸豬排飯",
+      price: 90,
+      description: `外酥內嫩的炸豬排，
+      搭配特製醬汁，美味可口。
+
+      配料：
+      - 炸豬排
+      - 高麗菜絲
+      - 蛋花
+      - 蔥花`,
+      imageUrl: "/fake/fake-product.jpg",
+    },
+  ],
+  麵食: [
+    {
+      id: 4,
+      name: "拉麵",
+      price: 95,
+      description: `濃郁豚骨湯頭，搭配彈牙麵條，
+      完美呈現日式拉麵的精髓。
+
+      配料：
+      - 叉燒肉
+      - 溏心蛋
+      - 筍乾
+      - 海苔
+      - 蔥花`,
+      imageUrl: "/fake/fake-product.jpg",
+    },
+    {
+      id: 5,
+      name: "炒烏龍麵",
+      price: 85,
+      description: `特製醬汁炒製，搭配新鮮海鮮，
+      口感豐富，風味獨特。
+
+      配料：
+      - 蝦仁
+      - 魷魚
+      - 高麗菜
+      - 紅蘿蔔
+      - 青蔥`,
+      imageUrl: "/fake/fake-product.jpg",
+    },
+  ],
+  小菜: [
+    {
+      id: 6,
+      name: "炸雞翅",
+      price: 60,
+      description: `外酥內嫩，特製醬料醃製，
+      香脆可口。
+
+      配料：
+      - 雞翅
+      - 蒜末
+      - 辣椒粉`,
+      imageUrl: "/fake/fake-product.jpg",
+    },
+    {
+      id: 7,
+      name: "涼拌小黃瓜",
+      price: 40,
+      description: `清爽開胃，特製醬料調味，
+      爽脆可口。
+
+      配料：
+      - 小黃瓜
+      - 蒜末
+      - 辣椒`,
+      imageUrl: "/fake/fake-product.jpg",
+    },
+  ],
+  飲料: [
+    {
+      id: 8,
+      name: "抹茶拿鐵",
+      price: 65,
+      description: `使用日本進口抹茶粉，
+      搭配鮮奶，香醇濃郁。
+
+      可選配料：
+      - 珍珠
+      - 椰果
+      - 布丁`,
+      imageUrl: "/fake/fake-product.jpg",
+    },
+    {
+      id: 9,
+      name: "水果茶",
+      price: 55,
+      description: `新鮮水果搭配特調茶品，
+      清爽解渴。
+
+      水果選項：
+      - 檸檬
+      - 柳橙
+      - 蘋果
+      - 葡萄`,
+      imageUrl: "/fake/fake-product.jpg",
+    },
+  ],
+};

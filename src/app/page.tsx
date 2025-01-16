@@ -1,4 +1,5 @@
 import NewsCarousel from "@/components/home/NewsCarousel";
+import { siteConfig } from "@/constants/store";
 
 export default function Home() {
   return (

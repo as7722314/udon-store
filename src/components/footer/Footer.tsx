@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="bg-blanchedalmond/95 backdrop-blur-sm mt-16">
       <div className="container mx-auto px-8 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:justify-items-center md:justify-items-start">
           <StoreInfo />
           <QuickLinks />
           <SocialLinks />

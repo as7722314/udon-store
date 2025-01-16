@@ -13,6 +13,7 @@ import {
 } from "@nextui-org/react";
 import { Newspaper, Info, UtensilsCrossed, MapPin } from "lucide-react";
 import NavLink from "./NavLink";
+import { siteConfig } from "@/constants/store";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -40,7 +41,7 @@ const Header: React.FC = () => {
             href="/"
             className="font-serif p-2 text-2xl font-bold text-blanchedalmond hover:text-white transition-all duration-300"
           >
-            烏龍麵
+            {siteConfig.name}
           </Link>
         </NavbarBrand>
       </NavbarContent>

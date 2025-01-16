@@ -2,6 +2,12 @@ import { Providers } from "./providers";
 import Header from "@/components/header/Header";
 import "./styles/globals.css";
 import Footer from "@/components/footer/Footer";
+import { siteConfig } from "@/constants/store";
+
+export const metadata = {
+  title: siteConfig.name,
+  description: siteConfig.description,
+};
 
 export default function RootLayout({
   children,

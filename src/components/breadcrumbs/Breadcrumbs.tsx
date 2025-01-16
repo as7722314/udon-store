@@ -35,7 +35,11 @@ export default function BreadcrumbsNav() {
 
   // 處理新聞詳情頁的麵包屑
   const processedPaths = paths.map((path, index) => {
-    if (index === paths.length - 1 && paths[0] === "news" && !isNaN(Number(path))) {
+    if (
+      index === paths.length - 1 &&
+      paths[0] === "news" &&
+      !isNaN(Number(path))
+    ) {
       const newsItem = newsData.find((n) => n.id === parseInt(path));
       return {
         href: `/news/${path}`,
@@ -51,7 +55,7 @@ export default function BreadcrumbsNav() {
 
   return (
     <Breadcrumbs
-      className="py-2 px-4"
+      className="max-w-6xl mx-auto py-2 px-4"
       itemClasses={{
         item: [
           "text-sm data-[current=true]:text-xl",
