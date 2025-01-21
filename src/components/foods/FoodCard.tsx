@@ -1,6 +1,6 @@
 "use client";
 
-import { Card } from "@nextui-org/react";
+import { Card } from "@heroui/react";
 import Image from "next/image";
 import { useState } from "react";
 import FoodModal from "./FoodModal";

@@ -10,7 +10,7 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { Newspaper, Info, UtensilsCrossed, MapPin } from "lucide-react";
 import NavLink from "./NavLink";
 import { siteConfig } from "@/constants/store";

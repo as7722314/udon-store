@@ -1,6 +1,6 @@
 "use client";
 
-import { Breadcrumbs, BreadcrumbItem } from "@nextui-org/react";
+import { Breadcrumbs, BreadcrumbItem } from "@heroui/react";
 import { usePathname } from "next/navigation";
 import { Home, Newspaper, UtensilsCrossed, Info, MapPin } from "lucide-react";
 import { newsCategories, newsData } from "@/constants/store";
