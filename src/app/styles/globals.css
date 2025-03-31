@@ -9,6 +9,7 @@
     height: 0.25rem;
     background: #ffebcd;
   }
+
   ::-webkit-scrollbar-thumb {
     background: #e14d4d;
     border-radius: 0.25rem;
@@ -33,5 +34,6 @@ body {
 
 main {
   width: 100%;
+  max-width: 100%;
   padding: 20px 5rem;
 }
