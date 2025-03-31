@@ -18,7 +18,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-4 border-t border-primary/20 text-center text-sm text-gray-600">
-          © {currentYear} 烏龍麵本店. All rights reserved.
+          © {currentYear} 川杉食堂. All rights reserved.
         </div>
       </div>
     </footer>

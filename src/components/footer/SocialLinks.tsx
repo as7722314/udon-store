@@ -1,4 +1,4 @@
-import { Facebook, Instagram } from "lucide-react";
+import { ShoppingBag, Instagram } from "lucide-react";
 import { storeInfo } from "@/constants/store";
 
 export default function SocialLinks() {
@@ -9,12 +9,12 @@ export default function SocialLinks() {
       </h3>
       <div className="flex gap-4">
         <a
-          href={storeInfo.facebook}
+          href={storeInfo.uber}
           target="_blank"
           rel="noopener noreferrer"
           className="p-2 rounded-full bg-primary text-white hover:bg-secondary transition-colors"
         >
-          <Facebook className="w-6 h-6" />
+          <ShoppingBag className="w-6 h-6" />
         </a>
         <a
           href={storeInfo.instagram}
@@ -27,4 +27,4 @@ export default function SocialLinks() {
       </div>
     </div>
   );
-} 
+}

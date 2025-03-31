@@ -1,28 +1,39 @@
 export const siteConfig = {
-  name: "烏龍麵本店",
+  name: "川杉食堂",
   description: "提供美味的烏龍麵與各式餐點",
   openHours: "11:00 - 21:00",
   phone: "(02) 2345-6789",
   mobile: "0912-345-678",
-  address: "台北市中山區中山北路二段99號",
+  address: "高雄市新興區八德二路27號",
   email: "info@udon.com",
-  facebook: "https://facebook.com/udon",
-  instagram: "https://instagram.com/udon",
-  googleMapUrl: "https://maps.google.com/?q=台北市中山區中山北路二段99號",
+  uber: "https://www.ubereats.com/tw/store/%E5%B7%9D%E6%9D%89%E9%A3%9F%E5%A0%82-%E6%97%A5%E5%BC%8F%E7%83%8F%E9%BE%8D%E9%BA%B5/WBiKADyXUx2tF9aMJWLUtA?utm_campaign=CM2508147-search-free-nonbrand-google-pas_e_all_acq_Global&utm_medium=search-free-nonbrand&utm_source=google-pas",
+  instagram:
+    "https://www.instagram.com/ka.wa.su.gi_food?igsh=MzJ5bWR6dGN5eXpj&utm_source=qr",
+  googleMapUrl: "https://maps.app.goo.gl/e4XSwGWpaKarRLYDA",
+};
+
+export const businessHours = {
+  monday: "18:00–22:30",
+  tuesday: "18:00–22:30",
+  wednesday: "18:00–22:30",
+  thursday: "18:00–22:30",
+  friday: "18:00–22:30",
+  saturday: "18:00–01:00",
+  sunday: "18:00–01:00",
 };
 
 export const storeInfo = {
-  name: "烏龍麵本店",
+  name: "川杉食堂",
   phone: "(02) 2345-6789",
   mobile: "0912-345-678",
-  facebook: "https://facebook.com/udon",
+  uber: "https://www.ubereats.com/tw/store/%E5%B7%9D%E6%9D%89%E9%A3%9F%E5%A0%82-%E6%97%A5%E5%BC%8F%E7%83%8F%E9%BE%8D%E9%BA%B5/WBiKADyXUx2tF9aMJWLUtA?utm_campaign=CM2508147-search-free-nonbrand-google-pas_e_all_acq_Global&utm_medium=search-free-nonbrand&utm_source=google-pas",
   instagram: "https://instagram.com/udon",
-  address: "台北市中山區中山北路二段99號",
-  googleMapUrl: "https://maps.google.com/?q=台北市中山區中山北路二段99號",
+  address: "高雄市新興區八德二路27號",
+  googleMapUrl: "https://maps.app.goo.gl/e4XSwGWpaKarRLYDA",
 };
 
 export const aboutInfo = {
-  title: "關於烏龍麵本店",
+  title: "關於川杉食堂",
   description: `我們的烏龍麵店創立於2020年，秉持著傳統日本烏龍麵的製作工藝，
   結合台灣在地食材，為顧客提供最道地的美味。每一根麵條都由師傅手工製作，
   湯頭更是使用精選食材，熬煮超過8小時。`,

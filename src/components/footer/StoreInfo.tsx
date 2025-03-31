@@ -1,4 +1,4 @@
-import { MapPin, Phone } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { siteConfig } from "@/constants/store";
 
 export default function StoreInfo() {
@@ -8,12 +8,6 @@ export default function StoreInfo() {
         {siteConfig.name}
       </h3>
       <div className="space-y-2">
-        <div className="flex items-center gap-2">
-          <Phone className="w-5 h-5 text-primary" />
-          <a href={`tel:${siteConfig.phone}`} className="hover:text-primary">
-            {siteConfig.phone}
-          </a>
-        </div>
         <div className="flex items-center gap-2">
           <MapPin className="w-5 h-5 text-primary" />
           <a
@@ -28,4 +22,4 @@ export default function StoreInfo() {
       </div>
     </div>
   );
-} 
+}

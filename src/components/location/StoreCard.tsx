@@ -1,14 +1,20 @@
 "use client";
 
 import { Card, CardBody } from "@heroui/react";
-import { Phone, Smartphone, Facebook, Instagram, MapPin } from "lucide-react";
+import {
+  Phone,
+  Smartphone,
+  ShoppingBag,
+  Instagram,
+  MapPin,
+} from "lucide-react";
 import Image from "next/image";
 
 interface StoreInfo {
   name: string;
   phone: string;
   mobile: string;
-  facebook: string;
+  uber: string;
   instagram: string;
   address: string;
   googleMapUrl: string;
@@ -22,7 +28,7 @@ export default function StoreCard({ storeInfo }: StoreCardProps) {
   return (
     <Card className="w-full">
       <CardBody className="p-0 flex flex-col sm:flex-row bg-blanchedalmond">
-        <div className="relative w-full sm:w-1/2 h-[300px]">
+        <div className="relative w-full sm:w-1/2 h-full">
           <Image
             src="/fake/fake-store.jpg"
             alt={storeInfo.name}
@@ -52,14 +58,14 @@ export default function StoreCard({ storeInfo }: StoreCardProps) {
               </a>
             </div>
             <div className="flex items-center gap-3">
-              <Facebook className="w-5 h-5 text-primary" />
+              <ShoppingBag className="w-5 h-5 text-primary" />
               <a
-                href={storeInfo.facebook}
+                href={storeInfo.uber}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-primary"
               >
-                Facebook
+                Uber
               </a>
             </div>
             <div className="flex items-center gap-3">

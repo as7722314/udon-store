@@ -22,12 +22,7 @@ export default function QuickLinks() {
             關於我們
           </Link>
         </div>
-        <div>
-          <Link href="/location" className="hover:text-primary">
-            店鋪位置
-          </Link>
-        </div>
       </div>
     </div>
   );
-} 
+}

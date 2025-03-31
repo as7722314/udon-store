@@ -11,7 +11,7 @@ import {
   NavbarMenuItem,
   Link,
 } from "@heroui/react";
-import { Newspaper, Info, UtensilsCrossed, MapPin } from "lucide-react";
+import { Newspaper, Info, UtensilsCrossed } from "lucide-react";
 import NavLink from "./NavLink";
 import { siteConfig } from "@/constants/store";
 
@@ -22,7 +22,6 @@ const Header: React.FC = () => {
     { href: "/news", icon: Newspaper, label: "最新消息" },
     { href: "/foods", icon: UtensilsCrossed, label: "美味餐點" },
     { href: "/about", icon: Info, label: "關於我們" },
-    { href: "/location", icon: MapPin, label: "店鋪位置" },
   ];
 
   return (
