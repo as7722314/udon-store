@@ -14,8 +14,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#e14d4d",
-        secondary: "#D92323",
+        primary: "#B90402",
+        secondary: "#62351E",
         blanchedalmond: "#FFEBCD",
       },
       fontFamily: {

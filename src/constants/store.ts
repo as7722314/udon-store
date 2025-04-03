@@ -7,8 +7,7 @@ export const siteConfig = {
   address: "高雄市新興區八德二路27號",
   email: "info@udon.com",
   uber: "https://www.ubereats.com/tw/store/%E5%B7%9D%E6%9D%89%E9%A3%9F%E5%A0%82-%E6%97%A5%E5%BC%8F%E7%83%8F%E9%BE%8D%E9%BA%B5/WBiKADyXUx2tF9aMJWLUtA?utm_campaign=CM2508147-search-free-nonbrand-google-pas_e_all_acq_Global&utm_medium=search-free-nonbrand&utm_source=google-pas",
-  instagram:
-    "https://www.instagram.com/ka.wa.su.gi_food?igsh=MzJ5bWR6dGN5eXpj&utm_source=qr",
+  instagram: "https://www.instagram.com/ka.wa.su.gi_food/",
   googleMapUrl: "https://maps.app.goo.gl/e4XSwGWpaKarRLYDA",
 };
 
@@ -27,7 +26,7 @@ export const storeInfo = {
   phone: "(02) 2345-6789",
   mobile: "0912-345-678",
   uber: "https://www.ubereats.com/tw/store/%E5%B7%9D%E6%9D%89%E9%A3%9F%E5%A0%82-%E6%97%A5%E5%BC%8F%E7%83%8F%E9%BE%8D%E9%BA%B5/WBiKADyXUx2tF9aMJWLUtA?utm_campaign=CM2508147-search-free-nonbrand-google-pas_e_all_acq_Global&utm_medium=search-free-nonbrand&utm_source=google-pas",
-  instagram: "https://instagram.com/udon",
+  instagram: "https://www.instagram.com/ka.wa.su.gi_food/",
   address: "高雄市新興區八德二路27號",
   googleMapUrl: "https://maps.app.goo.gl/e4XSwGWpaKarRLYDA",
 };

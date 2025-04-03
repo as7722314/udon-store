@@ -12,7 +12,7 @@ export default function SocialLinks() {
           href={storeInfo.uber}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2 rounded-full bg-primary text-white hover:bg-secondary transition-colors"
+          className="p-2 rounded-full bg-secondary text-white hover:bg-primary transition-colors"
         >
           <ShoppingBag className="w-6 h-6" />
         </a>
@@ -20,7 +20,7 @@ export default function SocialLinks() {
           href={storeInfo.instagram}
           target="_blank"
           rel="noopener noreferrer"
-          className="p-2 rounded-full bg-primary text-white hover:bg-secondary transition-colors"
+          className="p-2 rounded-full bg-secondary text-white hover:bg-primary transition-colors"
         >
           <Instagram className="w-6 h-6" />
         </a>

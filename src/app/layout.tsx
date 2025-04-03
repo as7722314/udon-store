@@ -26,7 +26,11 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/logo/ka_wa_su_gi.svg", type: "image/svg+xml" },
+      { url: "/logo/ka_wa_su_gi.png" },
+    ],
+    apple: [{ url: "/logo/ka_wa_su_gi.svg", type: "image/svg+xml" }],
   },
 };
 
@@ -37,6 +41,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-TW">
+      <head>
+        <link rel="icon" href="/logo/ka_wa_su_gi.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/logo/ka_wa_su_gi.png" />
+      </head>
       <body
         suppressHydrationWarning
         style={{

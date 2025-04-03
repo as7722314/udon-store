@@ -8,17 +8,26 @@ export default function QuickLinks() {
       </h3>
       <div className="space-y-2">
         <div>
-          <Link href="/news" className="hover:text-primary">
+          <Link
+            href="/news"
+            className="hover:text-primary font-semibold text-secondary transition-colors"
+          >
             最新消息
           </Link>
         </div>
         <div>
-          <Link href="/foods" className="hover:text-primary">
+          <Link
+            href="/foods"
+            className="hover:text-primary font-semibold text-secondary transition-colors"
+          >
             美味餐點
           </Link>
         </div>
         <div>
-          <Link href="/about" className="hover:text-primary">
+          <Link
+            href="/about"
+            className="hover:text-primary font-semibold text-secondary transition-colors"
+          >
             關於我們
           </Link>
         </div>

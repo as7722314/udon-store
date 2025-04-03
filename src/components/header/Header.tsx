@@ -12,6 +12,7 @@ import {
   Link,
 } from "@heroui/react";
 import { Newspaper, Info, UtensilsCrossed } from "lucide-react";
+import Image from "next/image";
 import NavLink from "./NavLink";
 import { siteConfig } from "@/constants/store";
 
@@ -35,10 +36,16 @@ const Header: React.FC = () => {
           aria-label={isMenuOpen ? "關閉選單" : "開啟選單"}
           className="sm:hidden text-white"
         />
-        <NavbarBrand>
+        <NavbarBrand className="flex items-center gap-2">
+          <Image
+            src="/logo/ka_wa_su_gi.svg"
+            alt="川杉食堂"
+            width={50}
+            height={50}
+          />
           <Link
             href="/"
-            className="font-serif p-2 text-2xl font-bold text-blanchedalmond hover:text-white transition-all duration-300"
+            className="font-serif p-2 text-2xl font-bold text-blanchedalmond hover:bg-blanchedalmond hover:text-primary transition-all duration-300"
           >
             {siteConfig.name}
           </Link>

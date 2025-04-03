@@ -14,7 +14,7 @@ export default function StoreInfo() {
             href={siteConfig.googleMapUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-primary"
+            className="hover:text-primary font-semibold text-secondary transition-colors"
           >
             {siteConfig.address}
           </a>
