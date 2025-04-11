@@ -37,16 +37,17 @@ const Header: React.FC = () => {
           className="sm:hidden text-white"
         />
         <NavbarBrand className="flex items-center gap-2">
-          <Image
-            src="/logo/ka_wa_su_gi.svg"
-            alt="川杉食堂"
-            width={50}
-            height={50}
-          />
           <Link
             href="/"
-            className="font-serif p-2 text-2xl font-bold text-blanchedalmond hover:bg-blanchedalmond hover:text-primary transition-all duration-300"
+            className="font-serif p-2 text-2xl font-bold text-blanchedalmond"
           >
+            <Image
+              className="rounded-full me-2"
+              src="/logo/ka_wa_su_gi.svg"
+              alt="川杉食堂"
+              width={50}
+              height={50}
+            />
             {siteConfig.name}
           </Link>
         </NavbarBrand>
