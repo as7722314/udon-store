@@ -1,5 +1,15 @@
 import Link from "next/link";
 
+// 定義連結資料陣列，便於後續維護和擴展
+const quickLinks = [
+  { href: "/news", label: "最新消息" },
+  { href: "/foods", label: "美味餐點" },
+  { href: "/about", label: "關於我們" },
+];
+
+// 提取重複使用的樣式類別
+const LINK_CLASS = "hover:text-primary font-semibold text-secondary transition-colors";
+
 export default function QuickLinks() {
   return (
     <div>
@@ -7,30 +17,13 @@ export default function QuickLinks() {
         網站導覽
       </h3>
       <div className="space-y-2">
-        <div>
-          <Link
-            href="/news"
-            className="hover:text-primary font-semibold text-secondary transition-colors"
-          >
-            最新消息
-          </Link>
-        </div>
-        <div>
-          <Link
-            href="/foods"
-            className="hover:text-primary font-semibold text-secondary transition-colors"
-          >
-            美味餐點
-          </Link>
-        </div>
-        <div>
-          <Link
-            href="/about"
-            className="hover:text-primary font-semibold text-secondary transition-colors"
-          >
-            關於我們
-          </Link>
-        </div>
+        {quickLinks.map((link) => (
+          <div key={link.href}>
+            <Link href={link.href} className={LINK_CLASS}>
+              {link.label}
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   );

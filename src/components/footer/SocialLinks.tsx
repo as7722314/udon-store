@@ -1,5 +1,25 @@
-import { ShoppingBag, Instagram } from "lucide-react";
-import { storeInfo } from "@/constants/store";
+import { ShoppingBag, Instagram, LucideIcon } from "lucide-react";
+import { siteConfig } from "@/constants/store";
+import type { SocialLinks } from "@/types/store";
+
+type SocialMediaLink = {
+  name: string;
+  url: keyof SocialLinks;
+  icon: LucideIcon;
+};
+
+const socialMediaLinks: SocialMediaLink[] = [
+  {
+    name: "外賣平台",
+    url: "uber",
+    icon: ShoppingBag,
+  },
+  {
+    name: "Instagram",
+    url: "instagram",
+    icon: Instagram,
+  },
+];
 
 export default function SocialLinks() {
   return (
@@ -8,22 +28,21 @@ export default function SocialLinks() {
         社群媒體
       </h3>
       <div className="flex gap-4">
-        <a
-          href={storeInfo.uber}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-2 rounded-full bg-secondary text-white hover:bg-primary transition-colors"
-        >
-          <ShoppingBag className="w-6 h-6" />
-        </a>
-        <a
-          href={storeInfo.instagram}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-2 rounded-full bg-secondary text-white hover:bg-primary transition-colors"
-        >
-          <Instagram className="w-6 h-6" />
-        </a>
+        {socialMediaLinks.map((link) => {
+          const Icon = link.icon;
+          return (
+            <a
+              key={link.name}
+              href={siteConfig[link.url]}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={link.name}
+              className="p-2 rounded-full bg-secondary text-white hover:bg-primary transition-colors"
+            >
+              <Icon className="w-6 h-6" />
+            </a>
+          );
+        })}
       </div>
     </div>
   );
