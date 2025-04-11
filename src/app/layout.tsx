@@ -46,7 +46,6 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/logo/ka_wa_su_gi.png" />
       </head>
       <body
-        suppressHydrationWarning
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/background.jpg")`,
         }}

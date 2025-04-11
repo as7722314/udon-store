@@ -1,12 +1,11 @@
 "use client";
 
-import { useMemo } from "react";
 import StoreInfo from "./StoreInfo";
 import QuickLinks from "./QuickLinks";
 import SocialLinks from "./SocialLinks";
 
 export default function Footer() {
-  const currentYear = useMemo(() => new Date().getFullYear(), []);
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-blanchedalmond/95 backdrop-blur-sm mt-16">
